@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./reset.scss";
+@import "./fonts.scss";
+
+html {
+    font-family: 'Montserrat', sans-serif;
+}
