@@ -1,3 +1,5 @@
 export default function Home() {
-  return <main className="flex justify-center items-center h-screen">Main Page</main>
+  return (
+    <main className="flex justify-center items-center h-screen">Main Page</main>
+  )
 }
