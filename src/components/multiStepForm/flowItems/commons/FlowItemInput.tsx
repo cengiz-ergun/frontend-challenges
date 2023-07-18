@@ -21,7 +21,7 @@ const FlowItemInput = (props: Props) => {
     const regexMap: any = {
       name: /^[A-Za-zğüşıöçĞÜŞİÖÇ\s]+$/,
       email: /^\S+@\S+\.\S+$/,
-      tel: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im,
+      tel: /^[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$/g,
     }
 
     const validationMessages: any = {
