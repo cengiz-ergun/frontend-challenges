@@ -19,7 +19,7 @@ const FlowItemInput = (props: Props) => {
   const [errorMessage, setErrorMessage] = useState('')
   const onValidateHandle = (value: string) => {
     const regexMap: any = {
-      name: /^[a-zA-Z\-]+$/,
+      name: /^[A-Za-zğüşıöçĞÜŞİÖÇ\s]+$/,
       email: /^\S+@\S+\.\S+$/,
       tel: /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im,
     }
